@@ -360,9 +360,10 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static const flex_int16_t yy_accept[8] =
+static const flex_int16_t yy_accept[13] =
     {   0,
-        0,    0,    4,    2,    1,    1,    0
+        2,    2,    4,    2,    3,    2,    2,    2,    2,    2,
+        1,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
@@ -371,15 +372,15 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    3,    3,    3,
-        3,    3,    3,    3,    3,    3,    3,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    3,    1,
 
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    4,    1,
+        5,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -397,29 +398,33 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1
     } ;
 
-static const YY_CHAR yy_meta[4] =
+static const YY_CHAR yy_meta[6] =
     {   0,
-        1,    1,    2
+        1,    2,    1,    1,    1
     } ;
 
-static const flex_int16_t yy_base[9] =
+static const flex_int16_t yy_base[15] =
     {   0,
-        0,    0,    5,    6,    0,    0,    6,    2
+        0,    2,   14,   10,   15,    3,    9,    0,    7,    5,
+       15,   15,    8,    0
     } ;
 
-static const flex_int16_t yy_def[9] =
+static const flex_int16_t yy_def[15] =
     {   0,
-        7,    1,    7,    7,    8,    8,    0,    7
+       13,   13,   12,   14,   12,   14,   14,    6,    7,    7,
+       12,    0,   12,   12
     } ;
 
-static const flex_int16_t yy_nxt[10] =
+static const flex_int16_t yy_nxt[21] =
     {   0,
-        4,    4,    5,    6,    7,    3,    7,    7,    7
+        7,    5,    6,    5,    6,    8,   11,    9,    4,    4,
+       10,    8,    8,   12,    3,   12,   12,   12,   12,   12
     } ;
 
-static const flex_int16_t yy_chk[10] =
+static const flex_int16_t yy_chk[21] =
     {   0,
-        1,    1,    1,    8,    3,    7,    7,    7,    7
+       14,    1,    1,    2,    2,    6,   10,    6,   13,   13,
+        9,    7,    4,    3,   12,   12,   12,   12,   12,   12
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -436,37 +441,11 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "hexadecimal-conv105.l"
-#line 2 "hexadecimal-conv105.l"
+#line 1 "test-line-end-with-com075.l"
+#line 2 "test-line-end-with-com075.l"
 #include <stdio.h>
-#include <string.h>
-
-void decimal_to_hex(int num) {
-    char hex[100];
-    int i = 0, remainder;
-    if(num == 0) {
-        printf("0x0\n");
-        return;
-    }
-    while(num != 0) {
-        remainder = num % 16;
-        if(remainder < 10) hex[i++] = remainder + '0';
-        else hex[i++] = remainder - 10 + 'A';
-        num /= 16;
-    }
-    printf("0x");
-    for(int j = i - 1; j >= 0; j--) printf("%c", hex[j]);
-    printf("\n");
-}
-
-int string_to_int(char *str) {
-    int result = 0;
-    for(int i = 0; str[i] != '\0'; i++)
-        result = result * 10 + (str[i] - '0');
-    return result;
-}
-#line 469 "lex.yy.c"
-#line 470 "lex.yy.c"
+#line 448 "lex.yy.c"
+#line 449 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -683,10 +662,9 @@ YY_DECL
 		}
 
 	{
-#line 31 "hexadecimal-conv105.l"
+#line 5 "test-line-end-with-com075.l"
 
-
-#line 690 "lex.yy.c"
+#line 668 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -713,13 +691,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 8 )
+				if ( yy_current_state >= 13 )
 					yy_c = yy_meta[yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 6 );
+		while ( yy_base[yy_current_state] != 15 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -744,22 +722,24 @@ do_action:	/* This label is used only to access EOF actions. */
 			goto yy_find_action;
 
 case 1:
+*yy_cp = (yy_hold_char); /* undo effects of setting up yytext */
+(yy_c_buf_p) = yy_cp -= 1;
+YY_DO_BEFORE_ACTION; /* set up yytext again */
 YY_RULE_SETUP
-#line 33 "hexadecimal-conv105.l"
-{ decimal_to_hex(string_to_int(yytext)); }
+#line 6 "test-line-end-with-com075.l"
+{ printf("Matched: %s", yytext); }
 	YY_BREAK
 case 2:
-/* rule 2 can match eol */
 YY_RULE_SETUP
-#line 34 "hexadecimal-conv105.l"
-{ ECHO; }
+#line 7 "test-line-end-with-com075.l"
+{ /* ignore other lines */ }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 36 "hexadecimal-conv105.l"
+#line 8 "test-line-end-with-com075.l"
 ECHO;
 	YY_BREAK
-#line 763 "lex.yy.c"
+#line 743 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1056,7 +1036,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 8 )
+			if ( yy_current_state >= 13 )
 				yy_c = yy_meta[yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
@@ -1084,11 +1064,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 8 )
+		if ( yy_current_state >= 13 )
 			yy_c = yy_meta[yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
-	yy_is_jam = (yy_current_state == 7);
+	yy_is_jam = (yy_current_state == 12);
 
 		return yy_is_jam ? 0 : yy_current_state;
 }
@@ -1764,14 +1744,16 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 36 "hexadecimal-conv105.l"
+#line 8 "test-line-end-with-com075.l"
 
 
 int main() {
-    printf("Enter decimal numbers (Ctrl+D to end):\n");
     yylex();
     return 0;
 }
 
-int yywrap() { return 1; }
+int yywrap() {
+    return 1;
+}
+
 
