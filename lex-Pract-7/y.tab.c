@@ -67,7 +67,7 @@
 
 
 /* First part of user prologue.  */
-#line 1 "postfix.y"
+#line 1 "postfix105.y"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -1130,43 +1130,43 @@ yyreduce:
   switch (yyn)
     {
   case 4: /* line: expr '\n'  */
-#line 38 "postfix.y"
+#line 38 "postfix105.y"
               { printf("Result: %d\n", pop()); }
 #line 1136 "y.tab.c"
     break;
 
   case 5: /* expr: expr NUMBER  */
-#line 42 "postfix.y"
+#line 42 "postfix105.y"
                 { push(yyvsp[0]); }
 #line 1142 "y.tab.c"
     break;
 
   case 6: /* expr: expr '+'  */
-#line 44 "postfix.y"
+#line 44 "postfix105.y"
                { int b = pop(); int a = pop(); push(a + b); }
 #line 1148 "y.tab.c"
     break;
 
   case 7: /* expr: expr '-'  */
-#line 46 "postfix.y"
+#line 46 "postfix105.y"
                { int b = pop(); int a = pop(); push(a - b); }
 #line 1154 "y.tab.c"
     break;
 
   case 8: /* expr: expr '*'  */
-#line 48 "postfix.y"
+#line 48 "postfix105.y"
                { int b = pop(); int a = pop(); push(a * b); }
 #line 1160 "y.tab.c"
     break;
 
   case 9: /* expr: expr '/'  */
-#line 50 "postfix.y"
+#line 50 "postfix105.y"
                { int b = pop(); int a = pop(); push(a / b); }
 #line 1166 "y.tab.c"
     break;
 
   case 10: /* expr: NUMBER  */
-#line 52 "postfix.y"
+#line 52 "postfix105.y"
                { push(yyvsp[0]); }
 #line 1172 "y.tab.c"
     break;
@@ -1365,7 +1365,7 @@ yyreturnlab:
   return yyresult;
 }
 
-#line 54 "postfix.y"
+#line 54 "postfix105.y"
 
 
 int yyerror(char *s) {

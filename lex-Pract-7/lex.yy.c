@@ -440,8 +440,8 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "postfix.l"
-#line 2 "postfix.l"
+#line 1 "postfix105.l"
+#line 2 "postfix105.l"
 #include "y.tab.h"
 #line 447 "lex.yy.c"
 #line 448 "lex.yy.c"
@@ -661,7 +661,7 @@ YY_DECL
 		}
 
 	{
-#line 5 "postfix.l"
+#line 5 "postfix105.l"
 
 
 #line 668 "lex.yy.c"
@@ -723,28 +723,28 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 7 "postfix.l"
+#line 7 "postfix105.l"
 { yylval = atoi(yytext); return NUMBER; }
 	YY_BREAK
 case 2:
 /* rule 2 can match eol */
 YY_RULE_SETUP
-#line 8 "postfix.l"
+#line 8 "postfix105.l"
 { return '\n'; }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 9 "postfix.l"
+#line 9 "postfix105.l"
 ; // Ignore whitespace
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 10 "postfix.l"
+#line 10 "postfix105.l"
 { return yytext[0]; }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 12 "postfix.l"
+#line 12 "postfix105.l"
 ECHO;
 	YY_BREAK
 #line 751 "lex.yy.c"
@@ -1752,6 +1752,6 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 12 "postfix.l"
+#line 12 "postfix105.l"
 
 
