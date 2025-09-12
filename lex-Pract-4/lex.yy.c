@@ -436,8 +436,8 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "convert_lower_upper_case.l"
-#line 2 "convert_lower_upper_case.l"
+#line 1 "convert_lower_upper_case075.l"
+#line 2 "convert_lower_upper_case075.l"
 #include <stdio.h>
 #line 443 "lex.yy.c"
 #line 444 "lex.yy.c"
@@ -657,7 +657,7 @@ YY_DECL
 		}
 
 	{
-#line 5 "convert_lower_upper_case.l"
+#line 5 "convert_lower_upper_case075.l"
 
 #line 663 "lex.yy.c"
 
@@ -718,14 +718,14 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 6 "convert_lower_upper_case.l"
+#line 6 "convert_lower_upper_case075.l"
 { /* Uppercase to lowercase */
             putchar(yytext[0] + 'a' - 'A');
           }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 10 "convert_lower_upper_case.l"
+#line 10 "convert_lower_upper_case075.l"
 { /* Lowercase to uppercase */
             putchar(yytext[0] - 'a' + 'A');
           }
@@ -733,14 +733,14 @@ YY_RULE_SETUP
 case 3:
 /* rule 3 can match eol */
 YY_RULE_SETUP
-#line 14 "convert_lower_upper_case.l"
+#line 14 "convert_lower_upper_case075.l"
 { /* Print all other characters as they are */
             putchar(yytext[0]);
           }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 17 "convert_lower_upper_case.l"
+#line 17 "convert_lower_upper_case075.l"
 ECHO;
 	YY_BREAK
 #line 747 "lex.yy.c"
@@ -1748,7 +1748,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 17 "convert_lower_upper_case.l"
+#line 17 "convert_lower_upper_case075.l"
 
 
 int main() {
