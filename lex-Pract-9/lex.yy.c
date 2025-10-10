@@ -459,8 +459,8 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "for075.l"
-#line 2 "for075.l"
+#line 1 "for105.l"
+#line 2 "for105.l"
 #include "y.tab.h"
 #include <string.h>
 #include <stdlib.h>
@@ -682,7 +682,7 @@ YY_DECL
 		}
 
 	{
-#line 9 "for075.l"
+#line 9 "for105.l"
 
 #line 688 "lex.yy.c"
 
@@ -743,103 +743,103 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 10 "for075.l"
+#line 10 "for105.l"
 { return FOR; }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 11 "for075.l"
+#line 11 "for105.l"
 { return LPAREN; }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 12 "for075.l"
+#line 12 "for105.l"
 { return RPAREN; }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 13 "for075.l"
+#line 13 "for105.l"
 { return SEMI; }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 14 "for075.l"
+#line 14 "for105.l"
 { return LBRACE; }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 15 "for075.l"
+#line 15 "for105.l"
 { return RBRACE; }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 16 "for075.l"
+#line 16 "for105.l"
 { return ASSIGN; }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 17 "for075.l"
+#line 17 "for105.l"
 { return INC; }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 18 "for075.l"
+#line 18 "for105.l"
 { return DEC; }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 19 "for075.l"
+#line 19 "for105.l"
 { return LE; }
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 20 "for075.l"
+#line 20 "for105.l"
 { return GE; }
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 21 "for075.l"
+#line 21 "for105.l"
 { return EQ; }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 22 "for075.l"
+#line 22 "for105.l"
 { return NE; }
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 23 "for075.l"
+#line 23 "for105.l"
 { return LT; }
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 24 "for075.l"
+#line 24 "for105.l"
 { return GT; }
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 26 "for075.l"
+#line 26 "for105.l"
 { yylval.num = atoi(yytext); return NUMBER; }
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 27 "for075.l"
+#line 27 "for105.l"
 { yylval.id = strdup(yytext); return ID; }
 	YY_BREAK
 case 18:
 /* rule 18 can match eol */
 YY_RULE_SETUP
-#line 29 "for075.l"
+#line 29 "for105.l"
 { /* skip whitespace */ }
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 30 "for075.l"
+#line 30 "for105.l"
 { return *yytext; }
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 31 "for075.l"
+#line 31 "for105.l"
 ECHO;
 	YY_BREAK
 #line 846 "lex.yy.c"
@@ -1847,7 +1847,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 31 "for075.l"
+#line 31 "for105.l"
 
 
 

@@ -67,7 +67,7 @@
 
 
 /* First part of user prologue.  */
-#line 1 "for075.y"
+#line 1 "for105.y"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -165,7 +165,7 @@ extern int yydebug;
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 union YYSTYPE
 {
-#line 8 "for075.y"
+#line 8 "for105.y"
  int num; char *id; 
 
 #line 172 "y.tab.c"
@@ -1198,7 +1198,7 @@ yyreduce:
   switch (yyn)
     {
   case 3: /* for_stmt: FOR LPAREN init_stmt SEMI opt_condition SEMI opt_inc RPAREN block  */
-#line 28 "for075.y"
+#line 28 "for105.y"
     {
         printf("Valid FOR loop parsed successfully!\n");
     }
@@ -1399,7 +1399,7 @@ yyreturnlab:
   return yyresult;
 }
 
-#line 76 "for075.y"
+#line 76 "for105.y"
 
 
 int main() {
