@@ -436,8 +436,8 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "hexadecimal-conv075.l"
-#line 2 "hexadecimal-conv075.l"
+#line 1 "hexadecimal-conv105.l"
+#line 2 "hexadecimal-conv105.l"
 #include <stdio.h>
 #include <string.h>
 
@@ -683,7 +683,7 @@ YY_DECL
 		}
 
 	{
-#line 31 "hexadecimal-conv075.l"
+#line 31 "hexadecimal-conv105.l"
 
 
 #line 690 "lex.yy.c"
@@ -745,18 +745,18 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 33 "hexadecimal-conv075.l"
+#line 33 "hexadecimal-conv105.l"
 { decimal_to_hex(string_to_int(yytext)); }
 	YY_BREAK
 case 2:
 /* rule 2 can match eol */
 YY_RULE_SETUP
-#line 34 "hexadecimal-conv075.l"
+#line 34 "hexadecimal-conv105.l"
 { ECHO; }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 36 "hexadecimal-conv075.l"
+#line 36 "hexadecimal-conv105.l"
 ECHO;
 	YY_BREAK
 #line 763 "lex.yy.c"
@@ -1764,7 +1764,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 36 "hexadecimal-conv075.l"
+#line 36 "hexadecimal-conv105.l"
 
 
 int main() {
