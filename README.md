@@ -51,3 +51,8 @@ $ ./a.out                   # Run the combined program
 `9) Parser for ''FOR'' loop statements.`<br>
 ### C
 `10) Intermediate code (IC) generator for arithmetic expression.`<br>
+
+
+<img width="1159" height="445" alt="image" src="https://github.com/user-attachments/assets/56871abe-a975-4acd-bb0c-4fb5d94a6da1" />
+
+
