@@ -37,6 +37,3 @@ $ gcc y.tab.c lex.yy.c -lfl  # Compile both lexer and parser
 $ ./a.out                   # Run the combined program
 ```
 
----
-
-Let me know if you'd like to add sample `.l` and `.y` files or usage examples to this README.
