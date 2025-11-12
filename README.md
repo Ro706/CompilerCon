@@ -32,7 +32,10 @@ $ vim <file_name>.l
 -> esc
 -> :wq
 $ lex <file_name>.l         # Generate lexer code
-$ yacc -d <file_name>.y     # Generate parser code and header file
+$ vim <file_name>.y
+-> esc
+-> :wq
+$ yacc -d <file_name>.y   # Generate parser code and header file
 $ gcc y.tab.c lex.yy.c -lfl  # Compile both lexer and parser
 $ ./a.out                   # Run the combined program
 ```
